@@ -71,7 +71,7 @@
 
                     echo "  <div class='question-actions'>
 
-                                <a href='./server/requests.php?like=$q_id' class='like-btn'>
+                                <a href='./server/requests.php?like=$q_id&page=" . urlencode($_SERVER['REQUEST_URI']) . "' class='like-btn'>
                                     <i class='fa-solid fa-heart $heartColor'></i>
                                     <span>$likes</span>
                                 </a>

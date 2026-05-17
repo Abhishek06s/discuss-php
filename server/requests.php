@@ -287,7 +287,9 @@
             $insert->execute();
         }
 
-        redirectBack();
+        $page = $_GET['page'] ?? '/discuss';
+        header("Location: $page");
+        exit();
     }
 
     else if(isset($_GET["delete"])){

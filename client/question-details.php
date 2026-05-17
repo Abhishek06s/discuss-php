@@ -32,7 +32,11 @@
             <!-- ANSWER FORM -->
             <form action="./server/requests.php" method="post">
                 <input type="hidden" name="question_id" value="<?php echo $q_id; ?>">
-                <textarea class="form-control" name="answer" rows="5" placeholder="Write your comment here..."></textarea>
+                <textarea class="form-control" maxlength="2000" id="answer" name="answer" rows="5" placeholder="Write your comment here..."></textarea>
+                <div class="character-wrapper">
+                    <span id="answer-charCount">0</span>
+                    <span class="char-text"> / 2000 characters</span>
+                </div>
                 <button type="submit" class="btn btn-primary mt-3" name="submit-answer" value="submit-answer">Submit Answer</button>
             </form>
         </div>

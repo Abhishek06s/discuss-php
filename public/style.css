@@ -10,6 +10,23 @@ a{
     margin-bottom: 20px;
 }
 
+#scrollTopBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #1fa4d8;
+    color: white;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 .margin-bottom-15{
     margin-bottom: 15px;
 }
@@ -372,6 +389,36 @@ a{
 
 .liked-heart{
     color: #e63946;
+}
+
+
+.character-wrapper{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.character-wrapper span:first-child{
+    color: #1fd81f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.character-wrapper .char-text{
+    margin-top: 2px;
+}
+
+.warning-text{
+    color: red !important;
+}
+
+.normal-text{
+    color: #1fd81f !important;
 }
 
 /*TABLETS*/

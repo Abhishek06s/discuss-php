@@ -7,6 +7,9 @@
     <?php include 'client/commonFiles.php'; ?>
 
 </head>
+<button id="scrollTopBtn">
+    ↑
+</button>
 <body>
     <?php
         session_start();
@@ -62,7 +65,7 @@
         }
     ?>
     
-    <script src="script.js"></script>
+    <script src="./public/script.js"></script>
     
 </body>
 </html>
